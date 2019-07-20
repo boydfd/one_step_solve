@@ -3,6 +3,7 @@
 site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
 cp ./resources/SimHei.ttf ${site_packages}/matplotlib/mpl-data/fonts/ttf/
 rm -rf ~/.matplotlib/*.cache
+rm ~/.matplotlib/fontlist-v310.json
 backup=${site_packages}/matplotlib/mpl-data/matplotlibrc_backup
 rc=${site_packages}/matplotlib/mpl-data/matplotlibrc
 
