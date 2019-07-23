@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
-curl https://github.com/boydfd/one_step_solve/raw/master/resources/SimHei.ttf -o ${site_packages}/matplotlib/mpl-data/fonts/ttf/SimHei.ttf
+curl https://raw.githubusercontent.com/boydfd/one_step_solve/master/resources/SimHei.ttf -o ${site_packages}/matplotlib/mpl-data/fonts/ttf/SimHei.ttf
 backup=${site_packages}/matplotlib/mpl-data/matplotlibrc_backup
 rc=${site_packages}/matplotlib/mpl-data/matplotlibrc
 
