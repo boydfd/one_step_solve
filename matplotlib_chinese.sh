@@ -32,3 +32,4 @@ add_config "${axes_unicode_minus}" "${path}"
 
 rm -rf ~/.matplotlib/*.cache
 rm ~/.matplotlib/fontlist-v310.json
+rm ~/.matplotlib/*.json
